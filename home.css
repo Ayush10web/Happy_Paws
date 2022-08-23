@@ -4,11 +4,6 @@
     box-sizing: boder box;
 }
 
-<!--STYLING OF NAVIGATION BAR STARTS FROM HERE-->
-
-
-
-
 a{
     text-decoration: none;
     Color :antiquewhite ;
@@ -16,61 +11,200 @@ a{
 
 
 p{
-    color:antiquewhite;
+    color:rgb(5, 5, 5);
 }
 
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    background: #000000;  
+/*** HEADER SECTION STARTS FROM HERE ***/
+
+
+
+                                           /***  NAVIGATION BAR  ***/
+
+header .logo-img {
+    height:90px;
+    width:90px;
+    align-items:left;
+    margin-left:50px;
 }
+
+.search {
+    margin-right: 100px;
+    width: 180px;
+    position: relative;
+}
+
+.search input 
+{
+    border: 1px solid rgb(1, 1, 1);
+    font-family:cursive;
+    border-color: black;
+    height: 40px;
+    width: 260px;
+    outline: none;
+    top: 0;
+    left:0;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+}
+
+.search input:hover {
+    border-color:#fff;
+}
+
+header .search input::placeholder{
+    color: rgb(8, 8, 8);
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+header .search .isearch {
+    position:absolute;
+    top:32%;
+    left:3%;
+    transform:translateX(15px);
+    border-right:1px solid rgb(6, 6, 6);
+    padding-right: 6px;
+    color: black;
+}
+
+.navigation {
+    width: 99.9%;
+    height : 110px;
+    background:black;
+    position: fixed;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 44px;
+    padding-top: 44px;
+    align-self:center;
+    letter-spacing: 1px;;
+}
+
+.navigation ul {
+    display: flex;
+    width :350px;
+    padding:20px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style:none;
+    height:70px;
+    width:70px;
+    z-index: 1;
+}
+
+.navigation ul li a {
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width : 100%;
+    text-align:center;
+    font-weight : 500;
+    color: #fff;
+    padding : 10px;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display:block;
+    line-height : 75px ;
+    font-size : 1.5em;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.navigation ul:hover li a .icon{
+    transform : translateY(-35px);
+}
+
+.navigation ul li:hover a .text{
+    transform : translateY(15px);
+    opacity: 1;
+}
+
+.navigation ul li a .text {
+    position : absolute;
+    font-weight :400;
+    font-size : 0.75em;
+    letter-spacing :0.05em;
+    transition : 0.5s;
+    opacity : 0;
+}
+
+
+
+/*** HEADER SECTION ENDS HERE ***/
+
+
+
+
+
+.banner {
+    padding: 200px 100px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url("rexy\ sexy.jpeg") center/cover no-repeat ;
+}
+
+.banner .content {
+    background: black;
+    width: 150px;
+    height: 50px;
+    margin-top:400px;
+    border-radius: 25px;;
+}
+
+.banner .content a {
+    text-decoration: none;
+    color: rgb(248, 245, 245);
+    opacity: 0.3;
+}
+
+.explore{
+    align-items: center;
+    font-family: cursive;
+    display:inline-block;
+    margin-top:10px;
+    margin-left:15px;
+}
+
+.banner .content a:hover{
+    opacity: 1;
+}
+
+/*** PRODUCTS ***/
+
+.production-collection-wrapper-cat{
+    display: flex;
+    width: 99.9%;
+    margin: 50px;
+}
+
+.container-cat{
+    margin:20px;
+}
+
+.product-col-right-cat flex {
+    display: flex;
+    width: 100%;
+    margin: 50px
+}
+
+
+/***Testimnial ***/
 
 .row{
     display:flex;
     align-items:center;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.col-1 {
-    flex-basis: 50%;
-    min-width: 300px;
-}
-
-.col-1 img{
-    max-width: 50%;
-    padding: 30px 0;
-}
-
-.col-1 h1{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-    color: antiquewhite;
-}
-
-.btn {
-    display: inline-block;
-    background-color: rgba(23, 157, 214, 0.885);
-    color: rgb(242, 233, 233);
-    padding: 8px 30px;
-    margin: 30px;
-    border-radius: 3px;
-    transition:background 0.5s;
-}
-
-.btn:hover{
-    background:rgb(36, 36, 179)
-}
-
-.header {
-    background:black;
-}
-
-.categories {
-    margin: 70px 0;
 }
 
 .col-2 {
@@ -80,7 +214,7 @@ p{
 }
 
 .col-2 img {
-    width:100%;
+    width:60%;
 }
 
 .small-container {
@@ -90,109 +224,15 @@ p{
     padding-right:25px;
 }
 
-.col-3 {
-    flex-basis:25%;
-    padding: 10px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
-}
-
-.col-3 img {
-    width: 100%
-}
-
-.title{
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    color: black;
-    
-}
-.title::after {
-    content:'';
-    background: rgba(236, 31, 31, 0.911);
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom:0;
-    left: 50%;
-    transform: translateX(-50%);
-    
-
-}
-h4 {
-    color: black;
-    font: weight normal;
-
-}
-.col-3 p {
-    font-size: 14px;
-}
 .rating .fa {
     color: rgba(46, 35, 205, 0.945);
 }
-.col-3:hover {
-    transform: translateY(-5px);
-}
-<!------------------------offer----------------------------->
 
-.offer {
-    background:rgb(222, 175, 143);
-    margin: top 80px;
-    padding:30px o;
-
-}
-.col-1 .offer-img{
-    padding:50px;
-
-}
-small{
+h3 {
     color: black;
-} 
-.testimonial{
-    padding: top 100px;
-}
-.testimonial .col-2{
-    text-align: center;
-    padding:40px 20px;
-    box-shadow:0 0 20px 0px black;
-    cursor: pointer;
-    transition: transform 0.5s;
-
-}
-.testimonial .col-2 img{
-    width: 50%;
-    margin-top: 20px;
-    border-radius: 50%;
-
-}
-.testimonial .col-2:hover{
-    transform: translateY(-10px);
-
-
-}
-.fa.fa-quote-left {
-    font: size 34px;
-    color: rgb(30, 37, 232);
-}
-.col-2 p{
-    font: size 12px;
-    color: black;
-
+    font: weight normal;
 }
 
- nav ul li a  {
-    width: 40px;
-    height: 40px;
-    border-radius:50%;
-    text-align: center;
-    line-height: 40px;
-    font-size:20px;
-    color:#000;
-    background: #fff;
-    margin-right: 15px;
-    cursor: pointer;
+.testimonials{
+    display: inline-block;
 }
