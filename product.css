@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family:'Rajdhani' , sans-serif;
+    font-family:cursive;
 }
 
 img{
@@ -214,12 +214,19 @@ img{
 /** PRODUCT COLLECTION **/
 
 .product-collection{
-    padding: 3.2rem 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display:inline-block;
+    margin: 110px;
 }
 
 .product-collection-wrapper{
-    padding: 3.2rem 0;
+    margin: 10px;
     
+}
+
+.product-col-right{
+    margin-top: 50px;
 }
 
 .product-col-left{
@@ -234,10 +241,10 @@ img{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height:50vh;
+    height:400vh;
     padding:2rem 1.5rem 3.2rem;
     margin:5px ;
-
+    width:100% ;
 }
 
 .product-col-left flex {
